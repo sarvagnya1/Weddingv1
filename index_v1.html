@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chandan weds Prasanna | Muhurtham 8:53 AM, October 14, 2026</title>
+<meta property="og:title" content="Chandan weds Prasanna">
+<meta property="og:description" content="Wednesday, October 14, 2026. Muhurtham 8:53 AM. Walk through our wedding morning, one ritual at a time.">
+<meta property="og:type" content="website">
+<!-- EDIT: replace YOUR-DOMAIN with the address where you host this folder -->
+<meta property="og:url" content="https://YOUR-DOMAIN/">
+<meta property="og:image" content="https://YOUR-DOMAIN/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="Chandan weds Prasanna. Wednesday, October 14, 2026. Muhurtham 8:53 AM at Aalankrita Resort & Convention, Shamirpet.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Serif+Telugu:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --silk:#5A0A18;
+  --silk-hi:#7E1629;
+  --silk-deep:#3D0610;
+  --gold:#E2B75A;
+  --gold-hi:#F6D98E;
+  --turmeric:#E8B923;
+  --leaf:#1F5B3A;
+  --cream:#FBF3E0;
+  --kumkum:#B3202A;
+  --bw:30px;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --silk:#5A0A18; } }
+:root[data-theme="dark"]{ --silk:#5A0A18; }
+@media (max-width:520px){ :root{ --bw:18px; } }
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{
+  margin:0;background:var(--silk-deep);color:var(--cream);
+  font-family:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  font-size:20px;line-height:1.5;-webkit-font-smoothing:antialiased;
+}
+.te{font-family:"Noto Serif Telugu",serif}
+.mar{font-family:"Marcellus",Georgia,serif}
+
+/* pattu silk with a temple border on both edges */
+.silk{
+  background:
+    radial-gradient(ellipse 70% 55% at 50% 42%,var(--silk-hi) 0%,var(--silk) 55%,var(--silk-deep) 100%);
+  position:relative;
+}
+.silk::before,.silk::after{
+  content:"";position:absolute;top:0;bottom:0;width:var(--bw);z-index:2;pointer-events:none;
+  background-color:var(--silk-deep);
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='28' height='28' viewBox='0 0 28 28'><rect width='5' height='28' fill='%231F5B3A'/><rect x='5' width='1.5' height='28' fill='%23E2B75A'/><polygon points='9,2 26,14 9,26' fill='%23E2B75A'/><polygon points='12,9 20,14 12,19' fill='%233D0610'/></svg>");
+  background-size:var(--bw) var(--bw);background-repeat:repeat-y;
+  border-right:1px solid var(--gold);
+}
+.silk::before{left:0}
+.silk::after{right:0;transform:scaleX(-1)}
+
+/* ---------- the ceremony ---------- */
+.story{position:relative;height:calc(12 * 80vh + 100vh)}
+.scene{position:sticky;top:0;height:100vh;height:100dvh;overflow:hidden}
+#fx{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:3}
+
+.bar{
+  position:absolute;z-index:4;top:calc(14px + env(safe-area-inset-top,0px));
+  left:calc(var(--bw) + 22px);right:calc(var(--bw) + 22px);text-align:center;opacity:0;
+}
+.bar p{margin:0;font-family:"Marcellus",Georgia,serif;font-size:15px;color:var(--gold);letter-spacing:.06em}
+.bar b{font-weight:400;color:var(--gold-hi)}
+.track{position:relative;height:14px;margin:8px auto 0;max-width:420px}
+.track::before{content:"";position:absolute;left:0;right:0;top:6px;height:1px;background:rgba(226,183,90,.45)}
+.track .tk{position:absolute;top:3px;width:7px;height:7px;margin-left:-3.5px;border-radius:50%;background:var(--silk-deep);border:1px solid var(--gold)}
+.track .tk.m{top:0;width:13px;height:13px;margin-left:-6.5px;border-radius:0;transform:rotate(45deg) scale(.8);background:var(--gold)}
+.track .dot{position:absolute;top:2px;width:9px;height:9px;margin-left:-4.5px;border-radius:50%;background:var(--gold-hi);box-shadow:0 0 10px var(--gold-hi)}
+
+.phase{
+  position:absolute;inset:0;padding:78px calc(var(--bw) + 24px) 40px;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;
+  opacity:0;visibility:hidden;
+}
+.phase .te{font-size:20px;color:var(--gold);margin:0 0 6px}
+.obj{width:clamp(180px,52vmin,270px);height:auto;overflow:visible}
+.obj .d{fill:none;stroke:var(--gold);stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:1;stroke-dashoffset:1}
+.obj .fill{fill:var(--gold);opacity:0;transition:opacity .5s}
+.obj .fill.on{opacity:1}
+.n{margin:10px 0 0;font-size:16px;color:var(--gold);font-style:italic}
+.t{font-family:"Marcellus",Georgia,serif;font-weight:400;font-size:clamp(30px,8vw,44px);line-height:1.1;margin:4px 0 0;color:var(--cream)}
+.x{max-width:360px;margin:12px 0 0;font-size:20px;color:#F1E2C4}
+
+/* intro */
+.intro .shri{font-size:18px;color:var(--gold);margin:0 0 22px}
+.intro .lead{max-width:340px;margin:0;color:#F1E2C4}
+.names{font-family:"Marcellus",Georgia,serif;font-size:clamp(46px,13vw,80px);line-height:1.02;margin:22px 0 0;color:var(--gold-hi);font-weight:400}
+.names span{display:block}
+.names .w{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:.4em;color:var(--cream);margin:.25em 0}
+.when{margin:22px 0 0;font-size:20px}
+.scroll{margin:26px 0 0;font-size:17px;font-style:italic;color:var(--gold)}
+.scroll a{color:inherit}
+.scroll a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.greet{font-style:italic;color:var(--gold-hi);font-size:22px;margin:0 0 8px}
+
+/* the muhurtham */
+.time{font-family:"Marcellus",Georgia,serif;font-size:clamp(54px,16vw,96px);line-height:1;color:var(--gold-hi);margin:4px 0 0}
+.reveal{position:relative;width:min(300px,78vw);height:clamp(150px,34vmin,200px);margin:14px 0 0;overflow:hidden}
+.reveal .beneath{position:absolute;inset:0;display:grid;place-items:center}
+.reveal .couple{font-family:"Marcellus",Georgia,serif;font-size:clamp(30px,8vw,40px);line-height:1.15;color:var(--gold-hi)}
+.reveal .couple em{display:block;font-family:"Cormorant Garamond",Georgia,serif;font-size:.6em;color:var(--cream)}
+.tera{
+  position:absolute;inset:0;will-change:transform;
+  background:repeating-linear-gradient(90deg,#FBF6EA 0 14px,#EEE3CB 22px,#FBF6EA 30px);
+  box-shadow:inset 0 0 0 5px var(--kumkum),inset 0 0 0 13px var(--turmeric),inset 0 0 0 15px var(--kumkum);
+  display:grid;place-items:center;color:var(--kumkum);
+}
+.tera svg{width:58px;height:66px}
+
+/* saptapadi */
+.foot{fill:var(--gold-hi);opacity:.12;transition:opacity .35s}
+.foot.on{opacity:1}
+.vow{min-height:1.5em;font-style:italic;font-size:22px;color:var(--gold-hi);margin:12px 0 0}
+
+/* arundhati */
+.star{fill:var(--gold-hi);opacity:0;transition:opacity .4s}
+.star.on{opacity:1}
+.alcor.on{animation:twinkle 1.6s ease-in-out infinite}
+@keyframes twinkle{0%,100%{opacity:1}50%{opacity:.35}}
+.lbl{fill:var(--cream);font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:13px;opacity:0;transition:opacity .5s}
+.lbl.on{opacity:1}
+
+/* ---------- details ---------- */
+.details{padding:0 var(--bw)}
+.details section{width:min(100%,560px);margin:0 auto;padding:68px 26px;text-align:center}
+.details section+section{border-top:1px solid rgba(226,183,90,.35)}
+.details h2{font-family:"Marcellus",Georgia,serif;font-weight:400;font-size:clamp(28px,7vw,38px);margin:0 0 14px;color:var(--gold-hi)}
+.details p{margin:0}
+.place{font-size:26px;font-weight:600;color:var(--cream)}
+.addr{margin-top:6px;color:#F1E2C4}
+.count{display:flex;justify-content:center;gap:28px;margin-top:22px}
+.count b{display:block;font-family:"Marcellus",Georgia,serif;font-weight:400;font-size:42px;line-height:1;color:var(--gold-hi);font-variant-numeric:tabular-nums}
+.count span{font-size:16px;color:#F1E2C4}
+.count.done{font-style:italic;font-size:24px;color:var(--gold-hi)}
+.acts{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:26px}
+.btn{
+  font:inherit;font-size:18px;font-weight:500;text-decoration:none;cursor:pointer;
+  padding:12px 22px;border-radius:999px;border:1px solid var(--gold);color:var(--gold-hi);background:transparent;
+  transition:background .2s,color .2s;
+}
+.btn:hover,.btn:focus-visible{background:var(--gold);color:var(--silk-deep);outline:none}
+.btn.primary{background:var(--gold);color:var(--silk-deep);font-weight:600}
+.btn.primary:hover,.btn.primary:focus-visible{background:var(--gold-hi)}
+footer{text-align:center;padding:26px 24px 70px;font-style:italic;color:var(--gold)}
+
+@media (prefers-reduced-motion: reduce){
+  .alcor.on{animation:none}
+  .foot,.star,.lbl,.obj .fill{transition:none}
+}
+</style>
+</head>
+<body>
+
+<div class="story" id="story">
+  <div class="scene silk" id="scene">
+    <canvas id="fx" aria-hidden="true"></canvas>
+
+    <div class="bar" id="bar" aria-hidden="true">
+      <p>Muhurtham <b>8:53 am</b></p>
+      <div class="track" id="track"><span class="dot" id="dot"></span></div>
+    </div>
+
+    <!-- 0 intro -->
+    <div class="phase intro" data-i="0">
+      <p class="shri te" lang="te">శ్రీరస్తు శుభమస్తు</p>
+      <p class="greet" id="greet" hidden></p>
+      <p class="lead">With the blessings of our families, we request the honor of your presence at the wedding of</p>
+      <h1 class="names"><span>Chandan</span><span class="w">weds</span><span>Prasanna</span></h1>
+      <p class="when">Wednesday, October 14, 2026<br>Aalankrita Resort &amp; Convention, Shamirpet</p>
+      <p class="scroll">Scroll to walk through the ceremony with us<br><a href="#details">or skip to the details</a></p>
+    </div>
+
+    <!-- 1 Gauri Puja -->
+    <div class="phase" data-i="1">
+      <p class="te" lang="te">గౌరీ పూజ</p>
+      <svg class="obj" viewBox="0 0 200 200" aria-hidden="true">
+        <path class="d" pathLength="1" d="M34 122c20 34 112 34 132 0-36 10-96 10-132 0z"/>
+        <path class="d" pathLength="1" d="M166 122c8-2 14-8 18-16"/>
+        <path class="d" pathLength="1" d="M80 150l-8 24h56l-8-24"/>
+        <path class="d" pathLength="1" d="M58 176h84"/>
+        <path class="d" pathLength="1" d="M184 100c-9-10-6-26 2-38 8 12 10 28 2 38-1 2-3 2-4 0z"/>
+        <path class="fill" d="M185 96c-4-6-3-14 1-20 4 6 5 14 1 20z"/>
+        <path class="d" pathLength="1" d="M60 128c12 4 68 4 80 0"/>
+      </svg>
+      <p class="n">1 of 11, 8:00 am</p>
+      <h2 class="t">Gauri Puja</h2>
+      <p class="x">The morning begins with prayers to Goddess Gauri for a long and happy married life.</p>
+    </div>
+
+    <!-- 2 Ganapati Puja -->
+    <div class="phase" data-i="2">
+      <p class="te" lang="te">గణపతి పూజ</p>
+      <svg class="obj" viewBox="0 0 200 200" aria-hidden="true">
+        <path class="d" pathLength="1" d="M58 96h84v10H58z"/>
+        <path class="d" pathLength="1" d="M62 106c-16 16-24 34-24 50 0 22 26 34 62 34s62-12 62-34c0-16-8-34-24-50"/>
+        <path class="d" pathLength="1" d="M42 150h116"/>
+        <ellipse class="d" pathLength="1" cx="100" cy="66" rx="20" ry="26"/>
+        <path class="d" pathLength="1" d="M92 42c4-7 12-7 16 0"/>
+        <path class="d" pathLength="1" d="M100 94c-14-2-34 4-48 18 18 0 34-6 48-18zM100 94c14-2 34 4 48 18-18 0-34-6-48-18z"/>
+        <path class="d" pathLength="1" d="M100 94c-10-10-28-14-44-10 12 8 28 12 44 10zM100 94c10-10 28-14 44-10-12 8-28 12-44 10z"/>
+        <circle class="fill" cx="100" cy="128" r="4.5"/><circle class="fill" cx="82" cy="132" r="3"/><circle class="fill" cx="118" cy="132" r="3"/>
+      </svg>
+      <p class="n">2 of 11</p>
+      <h2 class="t">Ganapati Puja</h2>
+      <p class="x">The groom prays to Lord Ganesha, remover of obstacles, before the rituals begin.</p>
+    </div>
+
+    <!-- 3 Basingalu -->
+    <div class="phase" data-i="3">
+      <p class="te" lang="te">బాసింగాలు</p>
+      <svg class="obj" viewBox="0 0 200 200" aria-hidden="true">
+        <path class="d" pathLength="1" d="M28 104Q100 44 172 104"/>
+        <path class="d" pathLength="1" d="M38 114Q100 60 162 114"/>
+        <path class="d" pathLength="1" d="M100 70l-14-20 14-18 14 18z"/>
+        <path class="d" pathLength="1" d="M100 32v-10"/>
+        <path class="d" pathLength="1" d="M54 98v34M76 86v40M100 82v44M124 86v40M146 98v34"/>
+        <circle class="fill" cx="54" cy="137" r="5"/><circle class="fill" cx="76" cy="131" r="5"/><circle class="fill" cx="100" cy="131" r="6"/><circle class="fill" cx="124" cy="131" r="5"/><circle class="fill" cx="146" cy="137" r="5"/>
+        <path class="d" pathLength="1" d="M28 104c-10 6-14 18-8 30M172 104c10 6 14 18 8 30"/>
+      </svg>
+      <p class="n">3 of 11</p>
+      <h2 class="t">Basingalu</h2>
+      <p class="x">Ornamental basingalu are tied on the foreheads of the bride and groom.</p>
+    </div>
+
+    <!-- 4 Sankalpam -->
+    <div class="phase" data-i="4">
+      <p class="te" lang="te">సంకల్పం</p>
+      <svg class="obj" viewBox="0 0 200 200" aria-hidden="true">
+        <ellipse class="d" pathLength="1" cx="78" cy="112" rx="36" ry="9"/>
+        <path class="d" pathLength="1" d="M42 112c0 32 14 58 36 58s36-26 36-58"/>
+        <path class="d" pathLength="1" d="M106 100l52-58"/>
+        <path class="d" pathLength="1" d="M158 42c4-8 16-8 18 0 2 8-8 14-16 10"/>
+        <path class="d" pathLength="1" d="M150 110c-5 7-5 12 0 12s5-5 0-12zM154 136c-5 7-5 12 0 12s5-5 0-12zM158 162c-5 7-5 12 0 12s5-5 0-12z"/>
+      </svg>
+      <p class="n">4 of 11</p>
+      <h2 class="t">Sankalpam</h2>
+      <p class="x">A vow of intent: the purpose of the ceremony is spoken aloud with water in hand.</p>
+    </div>
+
+    <!-- 5 Maha Sankalpam -->
+    <div class="phase" data-i="5">
+      <p class="te" lang="te">మహా సంకల్పం</p>
+      <svg class="obj" viewBox="0 0 200 200" aria-hidden="true">
+        <rect class="d" pathLength="1" x="22" y="74" width="156" height="24" rx="12"/>
+        <rect class="d" pathLength="1" x="22" y="102" width="156" height="24" rx="12"/>
+        <rect class="d" pathLength="1" x="22" y="130" width="156" height="24" rx="12"/>
+        <path class="d" pathLength="1" d="M40 86h34M86 86h18M116 86h30M40 114h22M74 114h44M130 114h32M40 142h40M92 142h26M130 142h18"/>
+        <path class="d" pathLength="1" d="M62 62v104M138 62v104"/>
+        <path class="d" pathLength="1" d="M62 166c-6 10-2 20 8 22M138 166c6 10 2 20-8 22"/>
+      </svg>
+      <p class="n">5 of 11</p>
+      <h2 class="t">Maha Sankalpam</h2>
+      <p class="x">The lineages of both families are recited, and the marriage is formally declared.</p>
+    </div>
+
+    <!-- 6 Jeelakarra Bellam : the muhurtham -->
+    <div class="phase" data-i="6">
+      <p class="te" lang="te">జీలకర్ర బెల్లం</p>
+      <p class="time">8:53 am</p>
+      <div class="reveal">
+        <div class="beneath"><p class="couple">Chandan<em>and</em>Prasanna</p></div>
+        <div class="tera" id="tera">
+          <svg viewBox="0 0 80 92" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M40 30c-6-6-16-8-24-4 6 4 14 6 24 4zM40 30c6-6 16-8 24-4-6 4-14 6-24 4z"/><ellipse cx="40" cy="20" rx="8" ry="10" fill="#E8B923"/><path d="M28 34h24v5H28z"/><path d="M26 39h28c7 8 11 16 11 25 0 13-11 22-25 22S15 77 15 64c0-9 4-17 11-25z"/></g></svg>
+        </div>
+      </div>
+      <p class="n">6 of 11, the muhurtham</p>
+      <h2 class="t">Jeelakarra Bellam</h2>
+      <p class="x">At the auspicious minute, cumin and jaggery paste is placed on each other's heads, and the curtain between the couple comes down.</p>
+    </div>
+
+    <!-- 7 Mangalya Dharana -->
+    <div class="phase" data-i="7">
+      <p class="te" lang="te">మాంగల్య ధారణ</p>
+      <svg class="obj" viewBox="0 0 200 200" aria-hidden="true">
+        <path class="d" pathLength="1" d="M46 34c-6 70 16 104 40 110M154 34c6 70-16 104-40 110"/>
+        <path class="d" pathLength="1" d="M46 34Q100 8 154 34"/>
+        <circle class="d" pathLength="1" cx="86" cy="152" r="16"/><circle class="d" pathLength="1" cx="86" cy="152" r="8"/>
+        <circle class="d" pathLength="1" cx="114" cy="152" r="16"/><circle class="d" pathLength="1" cx="114" cy="152" r="8"/>
+        <circle class="fill" cx="86" cy="18.5" r="3.6"/><circle class="fill" cx="100" cy="16.5" r="3.6"/><circle class="fill" cx="114" cy="18.5" r="3.6"/>
+      </svg>
+      <p class="n">7 of 11</p>
+      <h2 class="t">Mangalya Dharana</h2>
+      <p class="x">The groom ties the mangalsutram with three knots.</p>
+    </div>
+
+    <!-- 8 Talambralu & Mettelu -->
+    <div class="phase" data-i="8">
+      <p class="te" lang="te">తలంబ్రాలు, మెట్టెలు</p>
+      <svg class="obj" viewBox="0 0 200 200" aria-hidden="true">
+        <ellipse class="d" pathLength="1" cx="68" cy="126" rx="32" ry="15"/>
+        <ellipse class="d" pathLength="1" cx="132" cy="126" rx="32" ry="15"/>
+        <circle class="d" pathLength="1" cx="68" cy="110" r="7"/>
+        <circle class="d" pathLength="1" cx="132" cy="110" r="7"/>
+        <path class="d" pathLength="1" d="M68 100v-8M58 104l-6-5M78 104l6-5M132 100v-8M122 104l-6-5M142 104l6-5"/>
+      </svg>
+      <p class="n">8 of 11</p>
+      <h2 class="t">Talambralu and Mettelu</h2>
+      <p class="x">The couple showers each other with rice mixed with turmeric, and toe rings are placed on the bride's feet.</p>
+    </div>
+
+    <!-- 9 Saptapadi -->
+    <div class="phase" data-i="9">
+      <p class="te" lang="te">సప్తపది</p>
+      <svg class="obj" id="feet" viewBox="0 0 200 200" aria-hidden="true"></svg>
+      <p class="n">9 of 11</p>
+      <h2 class="t">Saptapadi</h2>
+      <p class="vow" id="vow" aria-live="polite"></p>
+    </div>
+
+    <!-- 10 Arundhati -->
+    <div class="phase" data-i="10">
+      <p class="te" lang="te">అరుంధతి నక్షత్రం</p>
+      <svg class="obj" viewBox="0 0 200 200" aria-hidden="true">
+        <path class="d" pathLength="1" d="M26 70L38 112 92 118 98 86 26 70M98 86L130 78 156 70 186 90" style="stroke-width:1.2;stroke-dasharray:1"/>
+        <circle class="star" cx="26" cy="70" r="3.4"/><circle class="star" cx="38" cy="112" r="3.2"/>
+        <circle class="star" cx="92" cy="118" r="3"/><circle class="star" cx="98" cy="86" r="2.6"/>
+        <circle class="star" cx="130" cy="78" r="3.4"/><circle class="star" cx="156" cy="70" r="3.4"/>
+        <circle class="star" cx="186" cy="90" r="3.2"/>
+        <circle class="star alcor" cx="164" cy="56" r="2.2"/>
+        <text class="lbl" x="150" y="88" text-anchor="middle">Vasishta</text>
+        <text class="lbl" x="170" y="44" text-anchor="middle">Arundhati</text>
+      </svg>
+      <p class="n">10 of 11</p>
+      <h2 class="t">Arundhati Darshanam</h2>
+      <p class="x">The couple is shown the star Arundhati beside Vasishta, a pair that stands for lifelong devotion.</p>
+    </div>
+
+    <!-- 11 Ashirvachanam -->
+    <div class="phase" data-i="11">
+      <p class="te" lang="te">ఆశీర్వచనం</p>
+      <svg class="obj" viewBox="0 0 200 200" aria-hidden="true">
+        <ellipse class="d" pathLength="1" cx="100" cy="140" rx="74" ry="18"/>
+        <ellipse class="d" pathLength="1" cx="100" cy="140" rx="58" ry="12"/>
+        <path class="d" pathLength="1" d="M60 138c10-32 70-32 80 0"/>
+        <circle class="fill" cx="100" cy="114" r="5" style="fill:#B3202A"/>
+      </svg>
+      <p class="n">11 of 11</p>
+      <h2 class="t">Ashirvachanam</h2>
+      <p class="x">And last, the blessings of our elders and everyone gathered. Yours included. Scroll down to tell us you'll be there.</p>
+    </div>
+  </div>
+</div>
+
+<main class="details silk" id="details">
+  <section>
+    <h2>Wednesday, October 14, 2026</h2>
+    <p>Gauri Puja at 8:00 am. Muhurtham at 8:53 am.</p>
+    <div class="count" id="count" aria-live="polite"></div>
+    <div class="acts">
+      <a class="btn" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Chandan+weds+Prasanna&dates=20261014T023000Z/20261014T063000Z&details=Gauri+Puja+at+8%3A00+AM+IST.+Muhurtham+at+8%3A53+AM+IST.&location=Aalankrita+Resort+%26+Convention%2C+Thumkunta+Village%2C+Shamirpet%2C+Secunderabad%2C+Telangana+500078">Add to calendar</a>
+    </div>
+  </section>
+  <section>
+    <h2>Aalankrita Resort &amp; Convention</h2>
+    <p class="addr">Thumkunta Village, Shamirpet<br>Secunderabad, Telangana 500078</p>
+    <div class="acts">
+      <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Aalankrita+Resort+%26+Convention%2C+Thumkunta+Village%2C+Shamirpet%2C+Secunderabad+500078">Get directions</a>
+    </div>
+  </section>
+  <section>
+    <h2>Will you bless us in person?</h2>
+    <p>One tap opens WhatsApp with your reply ready.</p>
+    <div class="acts">
+      <a class="btn primary" id="rsvp" target="_blank" rel="noopener" href="#">Reply on WhatsApp</a>
+      <button class="btn" id="share" type="button">Share this invitation</button>
+    </div>
+  </section>
+  <footer>Your presence is our blessing.</footer>
+</main>
+
+<script>
+(function(){
+  var RSVP_NUMBER = "917702828257";
+  var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var guest=(new URLSearchParams(location.search).get("to")||"").trim().slice(0,80);
+  if (guest){ var g=document.getElementById("greet"); g.textContent="Dear "+guest+","; g.hidden=false; }
+  function clamp(v,a,b){ return Math.max(a,Math.min(b,v)); }
+
+  // progress ticks, the muhurtham (ritual 6) marked
+  var track=document.getElementById("track");
+  for (var k=0;k<11;k++){
+    var s=document.createElement("span"); s.className="tk"+(k===5?" m":""); s.style.left=(k/10*100)+"%";
+    track.insertBefore(s,track.firstChild);
+  }
+
+  // saptapadi footprints
+  var feet=document.getElementById("feet"), fs="";
+  for (var i=0;i<7;i++){
+    var x=22+i*26, y=150-Math.sin(i/6*Math.PI)*56+(i%2?-7:7), r=(i%2?10:-10);
+    fs+='<g class="foot" transform="translate('+x+' '+y+') rotate('+r+')"><ellipse cx="0" cy="0" rx="6.5" ry="12"/>'+
+        '<circle cx="-5" cy="-14" r="2.4"/><circle cx="-1.6" cy="-16.5" r="2.1"/><circle cx="1.8" cy="-16.8" r="1.9"/><circle cx="4.8" cy="-15" r="1.7"/><circle cx="6.8" cy="-12.2" r="1.5"/></g>';
+  }
+  feet.innerHTML=fs;
+  var footEls=[].slice.call(feet.querySelectorAll(".foot"));
+  var vows=["To nourish each other","To grow together in strength","To preserve our wealth","To share our joys and sorrows","To care for our children and parents","To remain friends, lifelong","To be together forever"];
+  var vowEl=document.getElementById("vow");
+
+  var story=document.getElementById("story"), scene=document.getElementById("scene");
+  var phases=[].slice.call(document.querySelectorAll(".phase")), N=phases.length;
+  var tera=document.getElementById("tera"), bar=document.getElementById("bar"), dot=document.getElementById("dot");
+  var stars=[].slice.call(document.querySelectorAll(".star")), lbls=[].slice.call(document.querySelectorAll(".lbl"));
+  var draws=phases.map(function(ph){ return [].slice.call(ph.querySelectorAll(".d")); });
+  var fills=phases.map(function(ph){ return [].slice.call(ph.querySelectorAll(".fill")); });
+
+  // talambralu particles
+  var cv=document.getElementById("fx"), ctx=cv.getContext("2d"), dpr=Math.min(2,devicePixelRatio||1), W=0,H=0, grains=[];
+  function size(){ W=scene.clientWidth; H=scene.clientHeight; cv.width=W*dpr; cv.height=H*dpr; ctx.setTransform(dpr,0,0,dpr,0,0); }
+  size(); addEventListener("resize",size);
+  var cols=["#E8B923","#E8B923","#F2C84B","#F6E3A0","#FFFFFF"];
+  function emit(n){
+    for (var i=0;i<n;i++){
+      var pearl=Math.random()<.12;
+      grains.push({x:Math.random()*W,y:-10,vx:(Math.random()-.5)*.8,vy:1+Math.random()*1.8,r:Math.random()*6.3,vr:(Math.random()-.5)*.25,
+        len:pearl?2.6:3+Math.random()*2,pearl:pearl,c:pearl?"#FFFFFF":cols[(Math.random()*4)|0]});
+    }
+  }
+  var emitting=false;
+  function drawGrains(){
+    ctx.clearRect(0,0,W,H);
+    for (var i=grains.length-1;i>=0;i--){
+      var p=grains[i]; p.vy+=emitting?.05:.35; p.x+=p.vx; p.y+=p.vy; p.r+=p.vr;
+      if (p.y>H+10){ grains.splice(i,1); continue; }
+      ctx.save(); ctx.translate(p.x,p.y); ctx.rotate(p.r); ctx.fillStyle=p.c; ctx.beginPath();
+      if (p.pearl) ctx.arc(0,0,p.len,0,Math.PI*2); else ctx.ellipse(0,0,p.len,p.len*.38,0,0,Math.PI*2);
+      ctx.fill(); ctx.restore();
+    }
+  }
+
+  var lastIdx=-1;
+  function frame(){
+    var vh=scene.clientHeight;
+    var p=clamp(-story.getBoundingClientRect().top/(story.offsetHeight-vh),0,1);
+    var q=p*N, idx=Math.min(N-1,Math.floor(q)), lp=clamp(q-idx,0,1);
+    if (idx===N-1 && p>=1) lp=1;
+
+    phases.forEach(function(ph,i){
+      var o=0;
+      if (i===idx){
+        var fin=i===0?1:clamp(lp/.12,0,1), fout=i===N-1?1:clamp((1-lp)/.12,0,1);
+        o=Math.min(fin,fout);
+      }
+      ph.style.opacity=o; ph.style.visibility=o>0?"visible":"hidden";
+      var dp=i<idx?1:(i>idx?0:clamp((lp-.06)/.5,0,1));
+      draws[i].forEach(function(el){ el.style.strokeDashoffset=1-dp; });
+      fills[i].forEach(function(el){ el.classList.toggle("on",dp>.95); });
+    });
+
+    bar.style.opacity=clamp((q-.9)/.2,0,1);
+    dot.style.left=(clamp((q-1)/10,0,1)*100)+"%";
+
+    // the muhurtham: tera lowers with the scroll
+    var tv=idx<6?0:(idx>6?1:clamp((lp-.18)/.42,0,1));
+    tera.style.transform="translateY("+(tv*105)+"%)";
+
+    // saptapadi
+    var steps=idx<9?0:(idx>9?7:Math.floor(clamp((lp-.06)/.11,0,7)));
+    footEls.forEach(function(f,k){ f.classList.toggle("on",k<steps); });
+    vowEl.textContent=steps?steps+". "+vows[steps-1]:"Seven steps, one promise with each";
+
+    // arundhati
+    var sp=idx<10?0:(idx>10?1:lp);
+    stars.forEach(function(s,k){ s.classList.toggle("on",sp>.08+k*.04); });
+    lbls.forEach(function(l){ l.classList.toggle("on",sp>.5); });
+
+    // talambralu and akshintalu
+    emitting=(idx===8 || idx===11) && lp>.1 && lp<.92;
+    if (!reduce && emitting) emit(idx===8?3:1);
+    if (grains.length) drawGrains(); else if (lastIdx!==idx) ctx.clearRect(0,0,W,H);
+    lastIdx=idx;
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+
+  // countdown
+  var target=new Date("2026-10-14T08:53:00+05:30").getTime(), cnt=document.getElementById("count");
+  function tick(){
+    var d=target-Date.now();
+    if (d<=0){ cnt.className="count done"; cnt.textContent="Today is the day."; return; }
+    cnt.innerHTML="<div><b>"+Math.floor(d/864e5)+"</b><span>days</span></div><div><b>"+Math.floor(d%864e5/36e5)+"</b><span>hours</span></div><div><b>"+Math.floor(d%36e5/6e4)+"</b><span>minutes</span></div>";
+  }
+  tick(); setInterval(tick,30000);
+
+  // rsvp + share
+  var msg="Namaste Chandan & Prasanna, "+(guest?guest+" will":"we will")+" be there on October 14.";
+  document.getElementById("rsvp").href="https://wa.me/"+RSVP_NUMBER+"?text="+encodeURIComponent(msg);
+  document.getElementById("share").addEventListener("click",function(){
+    var url=location.href.split("?")[0];
+    var text="Chandan weds Prasanna. Muhurtham 8:53 AM, Wednesday October 14, 2026, Aalankrita Resort, Shamirpet. Walk through the ceremony: "+url;
+    if (navigator.share) navigator.share({title:"Chandan weds Prasanna",text:text,url:url}).catch(function(){});
+    else window.open("https://wa.me/?text="+encodeURIComponent(text),"_blank");
+  });
+})();
+</script>
+</body>
+</html>
